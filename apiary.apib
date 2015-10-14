@@ -1,9 +1,23 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://musicians.apiblueprint.org/
 
-# musicians
+# Musicians
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+Musicians is an API to help you manage your musical adventures and keep track of your bands.
+
+## Musicians Collection [/musicians]
+
+### List All Musicians [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "name" : "Matt Canty",
+                "instruments" : ["electic bass", "rhythm guitar"],
+                "bands" : ["Dear Joy", "Dan Haywood", "Cece & The Howlers", "Laish"]
+            }
+        ]
 
 ## Questions Collection [/questions]
 
